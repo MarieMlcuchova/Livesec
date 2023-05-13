@@ -21,6 +21,7 @@ html {
 body {
     margin: 0;
     font-family: $default-font;
+    line-height: 1.5;
 }
 
 .menu {
@@ -176,6 +177,50 @@ body {
 
 .aboutus {
 	height: 45vh;
+}
+
+.our-story {
+    margin: 20px;
+
+    &__item {
+        font-size: $body-text;
+    }
+
+    &__item--title {
+        color: $color-primary;
+        font-size: $h2-text;
+    }
+
+    &__item--title::before,
+    &__item--title::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 2px;
+        background-color: $color-secondary;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+
+    &__photo {
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (min-width: 800px) {
+    .our-story {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        margin: 40px;
+
+        &__item {
+            margin-top: 40px;
+        }
+    }
 }
 
 //footer section 

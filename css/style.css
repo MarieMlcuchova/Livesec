@@ -9,6 +9,7 @@ html {
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
 }
 
 .menu {
@@ -142,6 +143,41 @@ main {
   height: 45vh;
 }
 
+.our-story {
+  margin: 20px;
+}
+.our-story__item {
+  font-size: 16px;
+}
+.our-story__item--title {
+  color: #222a68;
+  font-size: 18px;
+}
+.our-story__item--title::before, .our-story__item--title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: #279af1;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.our-story__photo {
+  width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .our-story {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin: 40px;
+  }
+  .our-story__item {
+    margin-top: 40px;
+  }
+}
 .footer {
   background-color: #222a68;
   color: #F7F7FF;
