@@ -1,48 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>{{ title }}</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/css/style.css">
+	<title>{{ title }}</title>
 </head>
 <body>
-    <nav class="menu">
-        <div class="menu__wrapper">
-            <img class="menu__logo" src="/images/logo.svg" alt="Logo Livesec">
-        </div>
-        <div class="menu__wrapper">
-            <a class="menu__item" href="/aboutus/">O nás</a>
-            <a class="menu__item" href="/services/">Naše služby</a>
-            <a class="menu__item" href="#">Reference</a>
-            <a class="menu__item" href="#">Pracuj u nás</a>
-            <a class="menu__item" href="#">Kontakt</a>
-            <a class="menu__item" href="#">Aplikace</a>
-        </div>
-    </nav>
-    <main class="aboutus">
-        <h1 class="aboutus__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
-        <a class="aboutus__button" href="#">Zkontaktujte nás!</a>
-    </main>
-
-    {{ content | safe }}
-
-
-    <footer class="footer">
-        <div class="footer footer__wrapper--text">
-            <p class="footer__text">Copyright © 2023 LIVESEC s.r.o.</p>
-        </div>
-        <div class="footer__wrapper">
-            <a class="footer__item" href="#"><img src="/images/social-media/facebook.svg" alt="Facebook"></a>
-            <a class="footer__item" href="#"><img src="/images/social-media/e-mail.svg" alt="E-mail"></a>
-            <a class="footer__item" href="#"><img src="/images/social-media/messenger.svg" alt="Messenger"></a>
-            <a class="footer__item" href="#"><img src="/images/social-media/phone.svg" alt="Phone"></a>
-        </div>
-    </footer>
-
+	<nav class="menu">
+		<div class="menu__wrapper">
+			<a href="/index/"><img class="menu__logo" src="/images/logo.svg" alt="Logo Livesec"></a>
+		</div>
+		<div class="menu__wrapper">
+			<input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+			<label for="menu-checkbox" class="menu__toggler">☰</label>
+			<a class="menu__item" href="/index/">Livesec</a>
+			<a class="menu__item" href="/aboutus/">O nás</a>
+			<a class="menu__item" href="/services/">Naše služby</a>
+			<a class="menu__item" href="/work/">Pracuj u nás</a>
+			<a class="menu__item" href="/contact/">Kontakt</a>
+		</div>
+	</nav>
+	{{ content | safe }}
+	<footer class="footer">
+		<div class="footer footer__wrapper--text">
+			<p class="footer__text">Copyright © 2023 LIVESEC s.r.o.</p>
+		</div>
+		<div class="footer__wrapper">
+			<a class="footer__item" href="https://www.facebook.com/liveseccz" target="_blank"><img src="/images/social-media/facebook.svg" alt="Facebook"></a>
+			<a class="footer__item" href="mailto:info@livesec.cz"><img src="/images/social-media/e-mail.svg" alt="E-mail"></a>
+			<a class="footer__item" href="http://m.me/liveseccz" target="_blank"><img src="/images/social-media/messenger.svg" alt="Messenger"></a>
+			<a class="footer__item" href="tel: 732 281 121"><img src="/images/social-media/phone.svg" alt="Phone"></a>
+		</div>
+	</footer>
 </body>
 </html>
