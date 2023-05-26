@@ -1,13 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Livesec</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Livesec</title>
 </head>
 <body>
-    Tady bude webová stránka bezpečnostní agentury Livesec.
-</body>
+	<nav class="menu">
+		<div class="menu__wrapper">
+			<a href="/index/"><img class="menu__logo" src="images/logo.svg" alt="Logo Livesec"></a>
+		</div>
+		<div class="menu__wrapper">
+			<input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+			<label for="menu-checkbox" class="menu__toggler">☰</label>
+			<a class="menu__item" href="/index/">Livesec</a>
+			<a class="menu__item" href="/aboutus/">O nás</a>
+			<a class="menu__item" href="/services/">Naše služby</a>
+			<a class="menu__item" href="/work/">Pracuj u nás</a>
+			<a class="menu__item" href="/contact/">Kontakt</a>
+		</div>
+	</nav>
+	<main class="introduction">
+		<h1 class="introduction__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+		<a class="introduction__button" href="/contact/#demand_contact">Spolupracujte s námi!</a>
+	</main>
+	<section class="services">
+		<h2 class="services__main_title">Naše služby</h2>
+			<div class="services__wholewrapper">
+				<div class="services__item">
+					<img class="services__img" src="images/security.svg" alt="Event Security">
+					<div class="services__wrapper">
+						<h2 class="services__title">Event Security</h2>
+						<p class="services__text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+							Nihil accusantium minus repellat quas, maxime nemo.
+						</p>
+					</div>
+				</div>
+				<div class="services__item">
+					<img class="services__img" src="images/rescue.svg" alt="Zdravotnický dozor">
+					<div class="services__wrapper">
+						<h2 class="services__title">Zdravotnický dozor</h2>
+						<p class="services__text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+							Nihil accusantium minus repellat quas, maxime nemo.
+						</p>
+					</div>
+				</div>
+				<div class="services__item">
+					<img class="services__img" src="images/club-security.svg" alt="Club security">
+					<div class="services__wrapper">
+						<h2 class="services__title">Club Security</h2>
+						<p class="services__text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+							Nihil accusantium minus repellat quas, maxime nemo.
+						</p>
+					</div>
+				</div>
+				<div class="services__item">
+					<img class="services__img" src="images/fire.svg" alt="Požární dozor">
+					<div class="services__wrapper">
+						<h2 class="services__title">Požární dozor</h2>
+						<p class="services__text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+							Nihil accusantium minus repellat quas, maxime nemo.
+						</p>
+					</div>
+				</div>
+			</div>
+	</section>
+</body>	
 </html>
