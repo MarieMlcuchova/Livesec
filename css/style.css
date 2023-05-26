@@ -65,16 +65,16 @@ body {
     display: none;
   }
   .menu__item {
-    display: block;
+    display: inline-block;
     text-align: center;
   }
   .menu__logo {
     display: block;
   }
 }
-main {
+.introduction {
   background-color: #222a68;
-  background-image: url(/images/homepage-photo.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/homepage-photo.jpg);
   width: 100%;
   background-repeat: no-repeat;
   background-position: top;
@@ -83,7 +83,7 @@ main {
 
 .aboutus {
   background-color: #222a68;
-  background-image: url(/images/aboutus.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/aboutus.jpg);
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -92,7 +92,7 @@ main {
 
 .aboutservices {
   background-color: #222a68;
-  background-image: url(/images/services.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/services.jpg);
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -101,7 +101,7 @@ main {
 
 .aboutwork {
   background-color: #222a68;
-  background-image: url(/images/work.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/work.jpg);
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -110,7 +110,7 @@ main {
 
 .aboutcontact {
   background-color: #222a68;
-  background-image: url(/images/contact.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/contact.jpg);
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -139,7 +139,7 @@ main {
 .aboutcontact__title {
   margin: 0;
   color: #F7F7FF;
-  font-size: 28px;
+  font-size: 36px;
   text-align: center;
 }
 .introduction__button,
@@ -535,7 +535,7 @@ button {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  .demand {
+  #demand_contact {
     grid-column: span 2;
   }
   .adress__color {

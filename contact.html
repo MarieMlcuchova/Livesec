@@ -4,7 +4,7 @@ title: LIVESEC - Kontakt
 ---
 <main class="aboutcontact">
 	<h1 class="aboutcontact__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
-	<a class="aboutcontact__button" href="#">Zkontaktujte nás!</a>
+	<a class="aboutcontact__button" href="/contact/#demand_contact">Zkontaktujte nás!</a>
 </main>
 <section class="contact-wrapper">
 	<section class="owner">
@@ -35,20 +35,22 @@ title: LIVESEC - Kontakt
 			<iframe class="adress__map" src="https://frame.mapy.cz/s/mosopojama" width="100%" height="280" frameborder="0"></iframe>
 		</div>
 	</section>
-	<section class="demand">
-		<h2 class="title-secondary">Poptávkový formulář</h2>
-		<p class="demand__item">Máte zájem o naše služby?</p> 
-		<p class="demand__item demand__item--bold">Ozvěte se nám!</p>
-		<form method="post" action="#">
-			<label class="demand__label" for="full-name"> Jméno a příjmení:</label>
-			<input class="demand__form" type="text" name="full-name" id="full-name" placeholder="Jméno a příjmení" required>
-			<label class="demand__label" for="e-mail"> E-mail:</label>
-			<input class="demand__form" type="email" name="e-mail" id="e-mail" placeholder="E-mail" required>
-			<label class="demand__label" for="phone-number"> Telefon:</label>
-			<input class="demand__form" type="tel" name="phone-number" id="phone-number" placeholder="Telefonní číslo" required>
-			<label class="demand__label" for="about-person">O jaké služby máte zájem?</label>
-			<textarea type="text" name="about-person" id="about-person" rows="5" cols="20" placeholder="Prosím specifikujte své požadavky..." required></textarea>
-			<button type="submit" name="send" id="send">Odeslat</button>
-		</form>
+	<section id="demand_contact">
+		<section class="demand">
+			<h2 class="title-secondary">Poptávkový formulář</h2>
+			<p class="demand__item">Máte zájem o naše služby?</p> 
+			<p class="demand__item demand__item--bold">Ozvěte se nám!</p>
+			<form method="post" action="#">
+				<label class="demand__label" for="full-name"> Jméno a příjmení:</label>
+				<input class="demand__form" type="text" name="full-name" id="full-name" placeholder="Jméno a příjmení" required>
+				<label class="demand__label" for="e-mail"> E-mail:</label>
+				<input class="demand__form" type="email" name="e-mail" id="e-mail" placeholder="E-mail" required>
+				<label class="demand__label" for="phone-number"> Telefon:</label>
+				<input class="demand__form" type="tel" name="phone-number" id="phone-number" placeholder="Telefonní číslo" required>
+				<label class="demand__label" for="about-person">O jaké služby máte zájem?</label>
+				<textarea type="text" name="about-person" id="about-person" rows="5" cols="20" placeholder="Prosím specifikujte své požadavky..." required></textarea>
+				<button type="submit" name="send" id="send">Odeslat</button>
+			</form>
+		</section>
 	</section>
 </section>
